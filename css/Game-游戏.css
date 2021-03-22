@@ -1,0 +1,277 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+/*导航栏部分*/
+body {
+	background: linear-gradient(135deg, #B2B9BE, #2F4052);
+}
+.nav {
+	position: relative;
+	height: 50px;
+	background-color: #fff;
+	-moz-box-shadow: 1px 1px 10px #666;
+	-webkit-box-shadow: 1px 1px 10px #666;
+	box-shadow: 1px 1px 10px #666;
+	overflow: hidden;
+}
+.nav .logo {
+	width: 200px;
+	height: 100%;
+	float: left;
+}
+.nav .daohang {
+	float: right;
+	width: 300px;
+	height: 50px;
+	margin-right: 30px;
+}
+.nav .daohang button {
+	height: 40px;
+	margin-top: 5px;
+	width: 100px;
+	/*	position: relative;*/
+	background: transparent;
+	border-width: 1px medium;
+	border-radius: 2em;
+	outline: none;
+	text-align: center;
+}
+.nav .daohang .denglu {
+	float: left;
+}
+.nav .daohang .zhuce {
+	float: right;
+}
+.nav2 .parent {
+	position: relative;
+}
+.nav2 .search {
+	width: 100%;
+	height: 50px;
+	padding-left: 20px;
+	border: none;
+}
+.nav2 .btn {
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	right: 0px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	z-index: 999;
+	top: 0px;
+}
+.nav2 {
+	height: 50px;
+	background: #fff;
+	border-radius: 1em;
+	width: 80%;
+	-moz-box-shadow: 1px 1px 10px #666;
+	-webkit-box-shadow: 1px 1px 10px #666;
+	box-shadow: 1px 1px 10px #666;
+	z-index: 999;
+	overflow: hidden;
+}
+.test {
+	background: rgb(31,34,53);
+	/*			background: linear-gradient(0deg, #6190EB, #A7BFE8);*/
+	height: 2000px;
+	width: 80%;
+	margin-left: 10%;
+}
+.test .tuijian {
+	padding-top: 0.3%;
+	width: 100%;
+	height: 24%;
+	z-index: 999;
+}
+.test .tuijian .lunbo {
+	width: 100%;
+	height: 100%;
+	margin: 0px auto;
+	position: relative;
+	background: url(../image/ll.gif) no-repeat center;
+	background-attachment: fixed;
+	background-size: cover;
+	-moz-box-shadow: 2px 2px 10px #000;
+	-webkit-box-shadow: 2px 2px 10px #000;
+	box-shadow: 2px 2px 10px #000;
+}
+.test .tuijian .lunbo tr td {
+	width: 337px;
+	height: 173px;
+}
+.test .tuijian .lunbo tr td div {
+	color: #fff;
+	margin: 10px;
+	position: absolute;
+}
+.test .tuijian .lunbo tr td img, .test .tuijian .lunbo tr td div {
+	display: none;
+}
+.test .tuijian .lunbo tr td:hover img, .test .tuijian .lunbo tr td:hover div {
+	display: block;
+}
+.test .jiange {
+	width: 100%;
+	height: 2.5%;
+}
+.test h3 {
+	/*	height: 30%;*/
+	line-height: 30%;
+	font-size: 3vw;
+	color: rgb(255,173,85);
+	margin-top: 2%;
+	position: relative;
+	margin-left: 3%;
+}
+.test h3 a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 2vw;
+	position: absolute;
+	float: right;
+	padding-left: 65%;
+}
+.test ul {
+	margin-top: 3%;
+	margin-left: 3%;
+	font-family: "楷体";
+}
+.test ul li {
+	color: #6190EB;
+	font-size: 2vw;
+}
+.test ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+.test a:hover {
+	color: rgb(255,173,85);
+	text-decoration: none;
+}
+.test .xiangqin {
+	color: rgb(255,255,255);
+	margin-top: 2%;/*	border: rgb(255,255,255) solid 2px;*/
+}
+.test .xiangqin .title {
+	font-size: 3vw;
+	color: #4CA1AF;
+	font-family: "楷体";
+	margin-left: 3%;
+}
+.test .xiangqin .title span {
+	font-size: 1.5vw;
+	color: #FFF;
+	font-family: "楷体";
+}
+.test .xiangqin img {
+	width: 100%;
+	height: 100%;
+}
+.test .xiangqin .content {
+	font-size: 1.5vw;
+}
+.test .xiangqin .content .beijing {
+	font-size: 2vw;
+	font-family: "楷体";
+}
+.test .xiangqin .content .zhu {
+	color: rgb(255,0,0);
+}
+.test .xiangqin a {
+	font-size: 2vw;
+	text-decoration: none;
+	color: rgb(255,173,85);
+}
+.test .xiangqin a:hover {
+	font-size: 2vw;
+	text-decoration: none;
+	color: #3F6;
+}
+.test .jiazai {
+	text-align: center;
+	color: rgb(255,255,255);
+	font-size: 4vw;
+	text-decoration: none;
+}
+.fixnav {
+	position: fixed;
+	top: 0px;
+	left: 10%;
+}
+.xuanfu1, .xuanfu2, .xuanfu3, .xuanfu4 {
+	background: linear-gradient(45deg, #2F4052, #B2B9BE);
+	animation: gradientBG 10s ease infinite;
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+	background-size: 400% 400%;
+	transform: translateY(0);
+	color: #FFF;
+	overflow: hidden;
+	z-index: 9999;
+	position: fixed;
+	padding: 5px;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 2em;
+	overflow: hidden;
+	line-height: 50px;
+	right: 3%;
+	-moz-box-shadow: 2px 2px 10px #666;
+	-webkit-box-shadow: 2px 2px 10px #666;
+	box-shadow: 2px 2px 10px #666;
+}
+@keyframes gradientBG {
+ 0% {
+ background-position: 0% 50%;
+}
+ 50% {
+ background-position: 100% 50%;
+}
+ 100% {
+ background-position: 0% 50%;
+}
+}
+.xuanfu1 {
+	bottom: 260px;
+}
+.xuanfu2 {
+	bottom: 190px;
+}
+.xuanfu3 {
+	bottom: 120px;
+}
+.xuanfu4 {
+	bottom: 50px;
+}
+.foot {
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(180deg, #B2B9BE, #2F4052);
+	text-align: center;
+}
+.foot p {
+	color: #FFFFFF;
+	font-size: 2vw;
+}
+.foot a {
+	text-decoration: none;
+	color: #CCCCCC;
+	padding-left: 4%;
+	padding-right: 4%;
+}
+.foot a:hover {
+	text-decoration: none;
+	color: #FFF;
+}
+.foot .foot1 {
+	width: 100%;
+	height: 20%;
+}

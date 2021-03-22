@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Comic-漫画</title>
+<link rel="stylesheet" href="../css/Comic-漫画.css">
+</head>
+
+<body>
+<div class="nav">
+  <div class="logo"><img src="../image/logo1.png" width="100%" height="100%"></div>
+  <a name="ding"></a>
+  <div class="daohang">
+    <button class="denglu" onclick="dl()"> 登录 </button>
+    <button class="zhuce"onclick="zc()"> 注册 </button>
+    <script>
+function dl(){
+    window.location.href='登录.html';
+}
+function zc(){
+    window.location.href='注册.html';
+}
+</script> </div>
+</div>
+<div class="nav2">
+  <form action="" class="parent">
+    <input type="text" class="search" placeholder="搜索">
+    <input type="button" name="input" id="input" class="btn">
+  </form>
+</div>
+<div class="test">
+  <div class="tuijian">
+    <div class="card">
+      <div class="imgBx"> <img src="../image/1.png" alt=""> </div>
+      <div class="content">
+        <h2>辉夜大小姐想让我告白？<br>
+          ～天才们的恋爱头脑战～</h2>
+        <p><a href="#hy">read more</a></p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgBx"> <img src="../image/2.jpg" alt=""> </div>
+      <div class="content">
+        <h2>一人之下</h2>
+        <p><a href="#yr">read more</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="jiesao1" id="hy">
+    <p class="title"><strong>辉夜大小姐想让我告白？<br>
+      ～天才们的恋爱头脑战～</strong></p>
+    <p><img src="../image/1.png"></p>
+    <div class="leixing">
+      <p>原版名称：かぐや様は告らせたい〜天才たちの恋愛頭脳戦〜<br>
+        作者：赤坂明（赤坂アカ）<br>
+        类型：校园，恋爱，喜剧</p>
+    </div>
+    <div  class="content">
+      <h3>“先告白的人在恋爱当中是输家。” </h3>
+      <p>家庭背景与人品都很棒，一大群有前途的秀才所聚集的秀知院学园。在那里的学生会相遇的副会长·四宫辉夜与会长·白银御行原本应该是彼此受到了对方吸引，但想不到都过半年了却仍然什么事情也没发生。最麻烦的是这两个自尊心超强、无法坦率的家伙，居然开始想着要“设法让对方向自己告白”？ </p>
+      <p>直到恋情有下落之前会很欢乐的故事，新感觉“斗智”爱情喜剧、就此开战。 </p>
+    </div>
+  </div>
+  <div class="jiesao2" id="yr">
+    <p class="title"><strong>一人之下</strong></p>
+    <p><img src="../image/2.jpg"></p>
+    <div class="leixing">
+      <p>原版名称：异人<br>
+        作者：米二<br>
+        类型：玄幻，搞笑，武侠，格斗，热血</p>
+    </div>
+    <div  class="content">
+      <p>21世纪的中国。而在普罗大众的周围生活着一些传说中的武林高手，修道者，异能者，武侠小说中的各种门派是真是存在的，所使用的力量被称为炁，但没有等级划分，一个人的实力强弱只取决于实战表现。而这些拥有神奇力量的人被称为---异人 </p>
+      <p>随着父亲失踪，神秘少女冯宝宝的造访，少年张楚岚的平静校园生活被彻底颠覆。急于解开爷爷和自身秘密的张楚岚和没有任何记忆“不死少女”冯宝宝开启了“异人”之旅…… </p>
+    </div>
+  </div>
+  <a href="../index.html">
+  <div class="xuanfu1">主页</div>
+  </a> <a href="Animation-动画.html">
+  <div class="xuanfu2">A</div>
+  </a> <a href="Game-游戏.html">
+  <div class="xuanfu3">G</div>
+  </a> <a href = "#ding">
+  <div class="xuanfu4">顶</div>
+  </a>
+  <div class="foot">
+    <div class="foot1"></div>
+    <p>ACG-FUN</p>
+    <a href="#">联系我们</a> <a href="#">帮助中心</a> </div>
+</div>
+</body>
+</html>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$(".nav2").hide();
+		$(window).scroll(function() {
+			if($(document).scrollTop() >= 50) {
+				$(".nav2").addClass("fixnav").slideDown();
+			} else {
+				$(".nav2").hide();
+			}
+		})
+	})
+</script>

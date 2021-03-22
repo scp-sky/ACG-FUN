@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Animation-动画</title>
+<link rel="stylesheet" href="../css/Animation-动画.css">
+</head>
+
+<body>
+<div class="nav">
+  <div class="logo"><img src="../image/logo1.png" width="100%" height="100%"></div>
+  <a name="ding"></a>
+  <div class="daohang">
+    <button class="denglu" onclick="dl()"> 登录 </button>
+    <button class="zhuce"onclick="zc()"> 注册 </button>
+    <script>
+function dl(){
+    window.location.href='登录.html';
+}
+function zc(){
+    window.location.href='注册.html';
+}
+</script> </div>
+</div>
+<div class="nav2">
+  <form action="" class="parent">
+    <input type="text" class="search" placeholder="搜索">
+    <input type="button" name="input" id="input" class="btn">
+  </form>
+</div>
+<div class="test">
+<section class="g-img1"><a href="https://www.bilibili.com/bangumi/media/md23432">灵笼</a> </section>
+<section class="g-img2"><a href="https://www.bilibili.com/bangumi/media/md5267730">辉夜大小姐想让我告白？～天才们的恋爱头脑战～</a> </section>
+<section class="g-img3"><a href="https://www.bilibili.com/bangumi/media/md4340">中二病也要谈恋爱！</a></section>
+<section class="g-img4"><a href="https://www.bilibili.com/bangumi/media/md24755609/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1">刀剑神域</a></section>
+</div>
+<a href="../index.html">
+<div class="xuanfu1">主页</div>
+</a> <a href="Comic-漫画.html">
+<div class="xuanfu2">C</div>
+</a> <a href="Game-游戏.html">
+<div class="xuanfu3">G</div>
+</a> <a href = "#ding">
+<div class="xuanfu4">顶</div>
+</a>
+<div class="foot">
+  <div class="foot1"></div>
+  <p>ACG-FUN</p>
+  <a href="#">联系我们</a> <a href="#">帮助中心</a> </div>
+</div>
+</body>
+</html>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$(".nav2").hide();
+		$(window).scroll(function() {
+			if($(document).scrollTop() >= 50) {
+				$(".nav2").addClass("fixnav").slideDown();
+			} else {
+				$(".nav2").hide();
+			}
+		})
+	})
+</script>

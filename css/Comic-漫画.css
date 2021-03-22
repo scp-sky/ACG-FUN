@@ -1,0 +1,266 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+/*导航栏部分*/
+body {
+	background: linear-gradient(45deg, #4CA1AF, #C4E0E5);
+}
+.nav {
+	position: relative;
+	height: 50px;
+	background-color: #fff;
+	-moz-box-shadow: 1px 1px 10px #666;
+	-webkit-box-shadow: 1px 1px 10px #666;
+	box-shadow: 1px 1px 10px #666;
+	overflow: hidden;
+	z-index: 2;
+}
+.nav .logo {
+	width: 200px;
+	height: 100%;
+	float: left;
+}
+.nav .daohang {
+	float: right;
+	width: 300px;
+	height: 50px;
+	margin-right: 30px;
+}
+.nav .daohang button {
+	height: 40px;
+	margin-top: 5px;
+	width: 100px;
+	/*	position: relative;*/
+	background: transparent;
+	border-width: 1px medium;
+	border-radius: 2em;
+	outline: none;
+	text-align: center;
+}
+.nav .daohang .denglu {
+	float: left;
+}
+.nav .daohang .zhuce {
+	float: right;
+}
+.nav2 .parent {
+	position: relative;
+}
+.nav2 .search {
+	width: 100%;
+	height: 50px;
+	padding-left: 20px;
+	border: none;
+}
+.nav2 .btn {
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	background: url(../image/topbar.png) no-repeat;
+	right: 0px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	z-index: 999;
+	top: 0px;
+}
+.nav2 {
+	height: 50px;
+	background: #fff;
+	border-radius: 1em;
+	width: 80%;
+	-moz-box-shadow: 1px 1px 10px #666;
+	-webkit-box-shadow: 1px 1px 10px #666;
+	box-shadow: 1px 1px 10px #666;
+	z-index: 999;
+	overflow: hidden;
+}
+.test {
+	height: 1600px;
+	background: rgb(255,255,255);
+	width: 80%;
+	margin-left: 10%;
+}
+.test .tuijian {
+	background: url(../image/bbg.png) no-repeat top;
+	width: 100%;
+	height: 35%;
+	;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.test .tuijian .card {
+	margin-top: 50px;
+	position: relative;
+	max-width: 300px;
+	height: 215px;
+	background: #fff;
+	margin: 10px 30px;
+	padding: 30px 20px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+	transition: .4s ease-in-out;
+}
+.test .tuijian .card:hover {
+	height: 50%;
+}
+.test .tuijian .card .imgBx {
+	position: relative;
+	width: 260px;
+	height: 260px;
+	top: -60px;
+	left: 20px;
+	z-index: 1;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+	overflow: hidden;
+}
+.test .tuijian .card .imgBx img {
+	max-width: 100%;
+	border-radius: 4px;
+}
+.test .tuijian .card .content p {
+	margin-top: 20px;
+	border: rgb(0,0,0) 1px solid;
+	border-radius: 2em;
+}
+.test .tuijian .card .content p a {
+	font-size: 40px;
+	text-decoration: none;
+	color: #609;
+}
+.test .tuijian .card .content p a:hover {
+	font-size: 40px;
+	text-decoration: none;
+	color: #000;
+}
+.test .tuijian .card .content {
+	position: relative;
+	margin-top: -140px;
+	text-align: center;
+	color: #111;
+	visibility: hidden;
+	opacity: 0;
+	transition: .3s ease-in-out;
+}
+.test .tuijian .card:hover .content {
+	visibility: visible;
+	opacity: 1;
+	margin-top: -40px;
+	transition-delay: .3s;
+}
+.test .jiesao1, .test .jiesao2 {
+	width: 98%;
+	height: 30%;
+}
+.test .jiesao1 .title, .test .jiesao2 .title {
+	font-size: 3vw;
+	text-align: center;
+}
+.test .jiesao1 img {
+	float: left;
+	width: 210px;
+	height: 280px;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.test .jiesao2 img {
+	float: right;
+	width: 210px;
+	height: 280px;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.test .jiesao1 .leixing, .test .jiesao1 .content {
+	margin-right: 2%;
+}
+.test .jiesao2 .leixing, .test .jiesao2 .content {
+	margin-left: 2%;
+}
+.test .jiesao1 .leixing,.test .jiesao2 .leixing{
+	font-size:22px;
+	margin-top:2%;
+	margin-bottom:2%;}
+.xuanfu1, .xuanfu2, .xuanfu3, .xuanfu4 {
+	background: linear-gradient(45deg, #4CA1AF, #C4E0E5);
+	animation: gradientBG 10s ease infinite;
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+	background-size: 400% 400%;
+	transform: translateY(0);
+	color: #FFF;
+	overflow: hidden;
+	z-index: 9999;
+	position: fixed;
+	padding: 5px;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 2em;
+	overflow: hidden;
+	line-height: 50px;
+	right: 3%;
+	-moz-box-shadow: 2px 2px 10px #666;
+	-webkit-box-shadow: 2px 2px 10px #666;
+	box-shadow: 2px 2px 10px #666;
+}
+@keyframes gradientBG {
+ 0% {
+ background-position: 0% 50%;
+}
+ 50% {
+ background-position: 100% 50%;
+}
+ 100% {
+ background-position: 0% 50%;
+}
+}
+.xuanfu1 {
+	bottom: 260px;
+}
+.xuanfu2 {
+	bottom: 190px;
+}
+.xuanfu3 {
+	bottom: 120px;
+}
+.xuanfu4 {
+	bottom: 50px;
+}
+.fixnav {
+	position: fixed;
+	top: 0px;
+	left: 10%;
+}
+.foot {
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background: #666;
+	text-align: center;
+}
+.foot p {
+	color: #FFFFFF;
+	font-size: 2vw;
+}
+.foot a {
+	text-decoration: none;
+	color: #CCC;
+	padding-left: 4%;
+	padding-right: 4%;
+}
+.foot a:hover {
+	text-decoration: none;
+	color: #FFF;
+}
+.foot .foot1 {
+	width: 100%;
+	height: 20%;
+}

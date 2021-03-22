@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+/*导航栏部分*/
+body {
+	background: linear-gradient(45deg, #6190EB, #A7BFE8);
+}
+.nav {
+	position: relative;
+	height: 50px;
+	background-color: #fff;
+	-moz-box-shadow: 1px 1px 10px #666;
+	-webkit-box-shadow: 1px 1px 10px #666;
+	box-shadow: 1px 1px 10px #666;
+	overflow: hidden;
+}
+.nav .logo {
+	width: 200px;
+	height: 100%;
+	float: left;
+}
+.nav .daohang {
+	float: right;
+	width: 300px;
+	height: 50px;
+	margin-right: 30px;
+}
+.nav .daohang button {
+	height: 40px;
+	margin-top: 5px;
+	width: 100px;
+	background: transparent;
+	border-width: 1px medium;
+	border-radius: 2em;
+	outline: none;
+	text-align: center;
+}
+.nav .daohang .denglu {
+	float: left;
+}
+.nav .daohang .zhuce {
+	float: right;
+}
+.nav2 .parent {
+	position: relative;
+}
+.nav2 .search {
+	width: 100%;
+	height: 50px;
+	padding-left: 20px;
+	border: none;
+}
+.nav2 .btn {
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	background: url(../image/topbar.png) no-repeat;
+	right: 0px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	z-index: 999;
+	top: 0px;
+}
+.nav2 {
+	height: 50px;
+	background: #fff;
+	border-radius: 1em;
+	width: 100%;
+	-moz-box-shadow: 1px 1px 10px #666;
+	-webkit-box-shadow: 1px 1px 10px #666;
+	box-shadow: 1px 1px 10px #666;
+	z-index: 999;
+	overflow: hidden;
+}
+.test {
+	height: 2700px;
+	width: 100%;
+	z-index: 999;
+}
+.test section {
+	height:25%;
+	line-height: 100vh;
+	text-align: center;
+	font-size: 4vw;
+	color: #FFF;
+}
+.test section a {
+	text-decoration: none;
+	color: #CCC;
+}
+.test section a:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.test .g-img1 {
+	background: url(../image/ll.png) no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+}
+.test .g-img2 {
+	background: url(../image/hy.png) no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+}
+.test .g-img3 {
+	background: url(../image/ze.jpg) no-repeat center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+}
+.test .g-img4 {
+	background: url(../image/dj.jpg) no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+}
+.xuanfu1, .xuanfu2, .xuanfu3, .xuanfu4 {
+	background: linear-gradient(45deg, #6190EB, #A7BFE8);
+	/*	background: transparent;*/
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+	animation: gradientBG 7s ease infinite;
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+	background-size: 400% 400%;
+	transform: translateY(0);
+	color: #FFF;
+	overflow: hidden;
+	z-index: 9999;
+	position: fixed;
+	padding: 5px;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 2em;
+	overflow: hidden;
+	line-height: 50px;
+	right: 3%;
+	-moz-box-shadow: 2px 2px 10px #666;
+	-webkit-box-shadow: 2px 2px 10px #666;
+	box-shadow: 2px 2px 10px #666;
+	font-family: "黑体"；
+}
+.xuanfu1:hover, .xuanfu2:hover, .xuanfu3:hover, .xuanfu4:hover {
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+@keyframes gradientBG {
+ 0% {
+ background-position: 0% 50%;
+}
+ 50% {
+ background-position: 100% 50%;
+}
+ 100% {
+ background-position: 0% 50%;
+}
+}
+.xuanfu1 {
+	bottom: 260px;
+}
+.xuanfu2 {
+	bottom: 190px;
+}
+.xuanfu3 {
+	bottom: 120px;
+}
+.xuanfu4 {
+	bottom: 50px;
+}
+.fixnav {
+	position: fixed;
+	top: 0px;
+}
+.foot {
+	width: 100%;
+	height: 100px;
+	background:#666;
+/*	background: transparent;*/
+	text-align: center;
+}
+.foot p {
+	color: #FFFFFF;
+	font-size: 2vw;
+}
+.foot a {
+	text-decoration: none;
+	color:#CCC;
+	padding-left: 4%;
+	padding-right: 4%;
+}
+.foot a:hover {
+	text-decoration: none;
+	color: #FFF;
+}
+.foot .foot1 {
+	width: 100%;
+	height: 20%;
+}

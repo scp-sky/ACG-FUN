@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+.conter {
+	height: 70%;
+	margin: 0px;
+	display: flex; /*盒模型*/
+	justify-content: center; /*文档X轴布局*/
+	align-items: center; /*文档Y轴布局*/
+}
+.conter .container {
+	width: 80%; /*宽度*/
+	position: relative; /*相对定位*/
+	display: flex; /*盒模型*/
+	justify-content: space-between; /*文档X轴内容与内容间空隙相等*/
+}
+.conter .container .card {
+	position: relative; /*相对定位*/
+}
+.conter .container .card .face {
+	width: 150px;
+	height: 150px;
+	border-radius: 2em;
+	transition: 0.5s; /*过渡时间*/
+}
+.conter .container .card .face.face1 {
+	position: relative;
+	background: #2c3e50;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	transform: translateY(50px); /*2D转换，Y轴移动*/
+}
+.conter .container .card:hover .face.face1 { /*此处为card标签悬停时，内容1复位*/
+	/*background: #fff;*/
+	background: linear-gradient(-45deg, #2d8cf0, #19be6b, #ff9900, #ed3f14);
+	animation: gradientBG 5s ease infinite;
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+	background-size: 400% 400%;
+	transform: translateY(0);
+}
+@keyframes gradientBG {
+ 0% {
+ background-position: 0% 50%;
+}
+ 50% {
+ background-position: 100% 50%;
+}
+ 100% {
+ background-position: 0% 50%;
+}
+}
+.conter .container .card .face.face1 .content {
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+	transition: 0.5s;
+}
+.conter .container .card:hover .face.face1 .content { /*此处为card标签悬停时，更改封面的透明度*/
+	opacity: 1; /*透明度*/
+}
+.conter .container .card .face.face1 .content h1 {
+	margin: 10px 0 0;
+	padding: 0;
+	color: #fff;
+	text-align: center; /*字体居中*/
+	font-size: 5em; /*字体大小*/
+}
+.conter .container .card .face.face2 {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	box-sizing: border-box; /*设置盒子模型内布局，此处为元素的内边距盒边框不会影响最终大小*/
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); /*阴影*/
+	transform: translateY(-100px); /*2D转换，Y轴移动*/
+}
+.conter .container .card:hover .face.face2 { /*此处为card标签悬停时，内容2复位*/
+	transform: translateY(0px);
+}
+.conter .container .card .face.face2 p {
+	margin: 0;
+	padding: 0;
+	text-align:center;
+}
+.conter .container .card .face.face2 a {
+	margin: 15px 0 0;
+	display: inline-block; /*设置为行内块元素*/
+	text-decoration: none; /*文字样式，此处为了删除下划线*/
+	font-weight: 900; /*字体粗细*/
+	color: #000;
+	padding: 5px;
+	border: 1px solid #333;
+}
+.conter .container .card .face.face2 a:hover { /*此处为a标签悬停时*/
+	background: #333;
+	color: #fff;
+}
